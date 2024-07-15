@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="box">
+        <form>
+
+            <h1>Formulário de Cadastro</h1>
+            <h3>Complete seu cadastro</h3>
+            <br>
+            <fieldset class="top-box">
+                <div class="inputBox">
+                    <label for="nome" class="labelInput">Nome</label>
+                    <input type="text" name="nome" class="inputUser" id="nome" required>
+
+                </div>
+
+                <br>
+                <div class="inputBox">
+                    <label for="nome" class="labelInput">Sobrenome</label>
+                    <input type="text" name="sobrenome" class="inputUser" id="sobrenome" required>
+
+                </div>
+
+                <br>
+                <div class="inputBox">
+                    <label for="email" class="labelInput">Email</label>
+                    <input type="text" name="email" class="inputUser" id="email" required>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="Telefone" class="labelInput">Telefone</label>
+                    <input type="text" name="telefone" class="inputUser" id="Telefone" required>
+                </div>
+                <br>
+            </fieldset>
+            
+            <fieldset>
+                <h3>De qual lado da aplicação você desenvolve?</h3>
+                <div>
+                    <input type="radio" name="aplicacao" id="frontend" required> Front-End
+                    <label for="frontend"></label>
+                </div>
+
+                <div>
+                    <input type="radio" name="aplicacao" id="backend" required> Back-End
+                    <label for="backend"></label>
+                </div>
+
+                <div>
+                    <input type="radio" name="aplicacao" id="fullstack" required> FullStack
+                    <label for="fullstack"></label>
+
+                </div>
+
+            </fieldset>
+            
+            <fieldset>
+
+                <label for="experiencia">Experiência:</label>
+                <select id="experiencia" name="experiencia">
+                    <option value="">Selecione</option>
+                    <option value="iniciante">Iniciante</option>
+                    <option value="junior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Sênior</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <h3> Selecione as tecnologias que você utiliza: </h3>
+
+
+                <div  class="check">
+                    <input type="checkbox" id="html" name="html" value="Html">
+                    <label for="html"> html</label>
+
+                    <input type="checkbox" id="css" name="css" value="Css">
+                    <label for="css"> css</label>
+
+                    <input type="checkbox" id="javascript" name="javascript" value="Javascript">
+                    <label for="javascript"> javascript</label>
+
+                    <input type="checkbox" id="php" name="php" value="php">
+                    <label for="php"> php</label>
+
+                    <input type="checkbox" id="c#" name="c#" value="C#">
+                    <label for="c#"> c#</label>
+
+                    <input type="checkbox" id="python" name="python" value="python">
+                    <label for="python"> python</label>
+
+                    <input type="checkbox" id="java" name="java" value="Java">
+                    <label for="java">java</label>
+                </div>
+
+
+
+
+            </fieldset>
+            
+            <fieldset>
+                <h3> Conte um pouco com sua experência</h3>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+       
+            <input type="submit" name="botao" id="botao" required>
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

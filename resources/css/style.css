@@ -16,17 +16,67 @@ img {
   margin: auto;
   display: block;
 }
+
+/* Seção quem somos e sobre nós */
+
 .sobrenos {
+  text-align: center;
+  background-color: #34104d;
+  padding: 10px 0px 40px 0px;
+}
+.sobrenos h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #346635;
+  letter-spacing: 5px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.sobrenos h3 {
+  color: aliceblue;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card h1 {
+  color: #000;
+  font-size: 2em;
+  text-shadow: none;
+  text-transform: unset;
+}
+
+.card div {
+  box-shadow: 0 4px 8px 0 rgba(247, 245, 245, 0.8);
+  background-color: aliceblue;
+  padding: 30px 100px;
+  border-radius: 8px;
+}
+
+.card-midia {
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.sobrenos h3 {
+  color: rgb(168, 154, 154);
   text-align: center;
 }
 
-/* Seção quem somos e sobre nós */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+.sobrenos h2 {
+  color: whitesmoke;
   text-align: center;
-  font-family: arial;
+  font-size: 2em;
+  font-weight: bold;
+}
+.card > div > img {
+  max-width: 250px;
+  max-height: 180px;
+  width: 100%;
 }
 
 .title {
@@ -56,4 +106,50 @@ a {
 button:hover,
 a:hover {
   opacity: 0.7;
+}
+
+.vitrine h1 {
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: rgb(78, 78, 151);
+}
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.galeria div {
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+.galeria img {
+  width: 100%;
+}
+
+.galeria > div > h3 {
+  color: #3d79b1;
+  font-weight: bold;
+}
+
+.galeria button {
+  background-color: #471f61;
+
+  border-radius: 15px;
+  border: none;
+  width: 200px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galeria div {
+  width: 33%;
+  text-align: center;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.galeria a {
+  color: #ffffff;
 }
