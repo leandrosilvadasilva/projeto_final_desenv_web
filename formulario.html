@@ -3,118 +3,151 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="resources/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <!-- Importação do normalize css-->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    
+    
+    <link rel="shortcut icon" href="/resources/img/favicon/logosl-48.png" type="image/x-icon">
+    <!--Uso font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SL Formulário </title>
 </head>
 
 <body>
 
-    <div class="box">
+    <div class="formulario">
         <form>
 
-            <h1>Formulário de Cadastro</h1>
+            <h1>Formulário para orçamento</h1>
             <h3>Complete seu cadastro</h3>
-            <br>
-            <fieldset class="top-box">
+        
+        <fieldset>
+            <div class="dados-contato">
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">Nome</label>
-                    <input type="text" name="nome" class="inputUser" id="nome" required>
-
+                    <label for="nome" class="labelInput" >Nome</label>
+                    <input type="text" name="nome" class="inputUser" id="nome" required placeholder="Digite seu nome">
                 </div>
-
-                <br>
                 <div class="inputBox">
                     <label for="nome" class="labelInput">Sobrenome</label>
-                    <input type="text" name="sobrenome" class="inputUser" id="sobrenome" required>
-
+                    <input type="text" name="sobrenome" class="inputUser" id="sobrenome" required placeholder="Digite seu sobrenome">
                 </div>
-
-                <br>
                 <div class="inputBox">
                     <label for="email" class="labelInput">Email</label>
-                    <input type="text" name="email" class="inputUser" id="email" required>
+                    <input type="text" name="email" class="inputUser" id="email" required placeholder="Digite email">
                 </div>
-                <br>
+
                 <div class="inputBox">
                     <label for="Telefone" class="labelInput">Telefone</label>
-                    <input type="text" name="telefone" class="inputUser" id="Telefone" required>
+                    <input type="text" name="telefone" class="inputUser" id="Telefone" required placeholder="Digite telefone com DDD">
                 </div>
-                <br>
-            </fieldset>
-            
-            <fieldset>
-                <h3>De qual lado da aplicação você desenvolve?</h3>
+            </div>
+        </fieldset>
+        <h2>Dados da Empresa</h2>
+        <fieldset>
+            <div class="dados-contato">
+                <div class="inputBox">
+                    <label for="nome" class="labelInput">Nome Empresa</label>
+                    <input type="text" name="nome" class="inputUser" id="nome" placeholder="Empresa | Clínica | Hospital" required>
+                </div>
+                <div class="inputBox">
+                    <label for="nome" class="labelInput">Razão Social</label>
+                    <input type="text" name="nome" class="inputUser" id="nome" required placeholder="Digite razão social">
+                </div>
+                <div class="inputBox">
+                    <label for="nome" class="labelInput">CNPJ</label>
+                    <input type="text" name="sobrenome" class="inputUser" id="sobrenome" required placeholder="Digite CNPJ">
+                </div>
+                <div class="inputBox">
+                    <label for="email" class="labelInput">Email</label>
+                    <input type="text" name="email" class="inputUser" id="email" required placeholder="Digite email da sua empresa">
+                </div>
+                <div class="inputBox">
+                    <label for="Telefone" class="labelInput">Telefone</label>
+                    <input type="text" name="telefone" class="inputUser" id="Telefone" required placeholder="Digite telefone">
+                </div>
+                <div class="inputBox">
+                  <label for="Telefone" class="labelInput">Cidade</label>
+                  <input type="text" name="telefone" class="inputUser" id="Telefone" required placeholder="Digite cidade">
+              </div>
+            </div>
+        </fieldset>
+        
+        <h2>O que você deseja cotar</h2>
+          
+            <fieldset class="cotacao">
+                <h3>Escolha:</h3>
                 <div>
-                    <input type="radio" name="aplicacao" id="frontend" required> Front-End
+                    <input type="radio" name="aplicacao" id="frontend" required> Equipamentos
                     <label for="frontend"></label>
                 </div>
 
                 <div>
-                    <input type="radio" name="aplicacao" id="backend" required> Back-End
-                    <label for="backend"></label>
+                    <input type="radio" name="insumos" id="insumos" required> Insumos
+                    <label for="insumos"></label>
                 </div>
 
                 <div>
-                    <input type="radio" name="aplicacao" id="fullstack" required> FullStack
-                    <label for="fullstack"></label>
+                    <input type="radio" name="servicos" id="servicos" required> Serviços
+                    <label for="servicos"></label>
 
                 </div>
 
             </fieldset>
             
-            <fieldset>
-
-                <label for="experiencia">Experiência:</label>
+            <h2>Como conheceu nossa empresa:</h2>
+            
+            <fieldset class="pesquisa">
                 <select id="experiencia" name="experiencia">
                     <option value="">Selecione</option>
-                    <option value="iniciante">Iniciante</option>
-                    <option value="junior">Junior</option>
-                    <option value="pleno">Pleno</option>
-                    <option value="senior">Sênior</option>
+                    <option value="google">Google</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="boca">Boca a boca</option>
                 </select>
             </fieldset>
             
-            <fieldset>
-                <h3> Selecione as tecnologias que você utiliza: </h3>
+            <h2> Selecione as marcas que você já utiliza: </h2>
+            <fieldset class="marcas">
 
 
                 <div  class="check">
-                    <input type="checkbox" id="html" name="html" value="Html">
-                    <label for="html"> html</label>
+                    <input type="checkbox" id="baxter" name="baxter" value="baxter">
+                    <label for="baxter"> Baxter </label>
 
-                    <input type="checkbox" id="css" name="css" value="Css">
-                    <label for="css"> css</label>
+                    <input type="checkbox" id="ge" name="ge" value="ge">
+                    <label for="ge"> GE HealthCare </label>
 
-                    <input type="checkbox" id="javascript" name="javascript" value="Javascript">
-                    <label for="javascript"> javascript</label>
+                    <input type="checkbox" id="leboo" name="leboo" value="leboo">
+                    <label for="leboo"> Leboo</label>
 
-                    <input type="checkbox" id="php" name="php" value="php">
-                    <label for="php"> php</label>
+                    <input type="checkbox" id="coloplast" name="coloplast" value="coloplast">
+                    <label for="coloplast"> Coloplast</label>
 
-                    <input type="checkbox" id="c#" name="c#" value="C#">
-                    <label for="c#"> c#</label>
+                    <input type="checkbox" id="cardinal" name="cardinal" value="cardinal">
+                    <label for="cardinal"> Cardinal Health</label>
 
-                    <input type="checkbox" id="python" name="python" value="python">
-                    <label for="python"> python</label>
+                    <input type="checkbox" id="amoul" name="amoul" value="amoul">
+                    <label for="amoul"> Amoul</label>
 
-                    <input type="checkbox" id="java" name="java" value="Java">
-                    <label for="java">java</label>
+                    <input type="checkbox" id="gt" name="gt" value="gt">
+                    <label for="gt">G-Tech</label>
                 </div>
-
-
-
-
             </fieldset>
             
-            <fieldset>
-                <h3> Conte um pouco com sua experência</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </fieldset>
-       
-            <input type="submit" name="botao" id="botao" required>
-
+            <h2> Deixe seu comentário, pedido ou dúvida:</h2>
+            
+                <textarea name="" id="" cols="60" rows="10"></textarea>
+                <input type="submit" name="botao" id="botao" required value="Enviar">
+                
+            
         </form>
 
     </div>
@@ -122,11 +155,79 @@
 
 
 
+ <!-- FOOTER  -->
+ <footer>
+    
+    <div class="links-footer">
 
+      <div class="footer-item">
+        <img src="resources/img/favicon/logosl-48.png">
+      </div>
+      <div class="footer-item">
+        <h3>Home</h3>
+        <ul>
+          <li><a href="">Quem somos</a></li>
+          <li><a href="">Empresa</a></li>
+          <li><a href="">Contatos</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="">Soluções</a></li>
+          <li><a href="">Suporte</a></li>
+          <li><a href="">Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3>Mídias sociais</h3>
+        <ul>
+          <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+      </div>
+      
+    </div>
+           
+  </footer>
+</section>
+<section>
+  <div class="final">
+    <div class="diversos">
+      <div>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <h4>9999-9999</h4> 
+      </div>
+      <div> 
+        <ion-icon name="mail-outline"></ion-icon>
+        <h4>sl@sl.com.br</h4>
+      </div>
+      <div> 
+        <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <h4>DPO </h4>
+      </div>
+      <div>
+        <ion-icon name="home-outline"></ion-icon> 
+        <h4>Endereços </h4>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="politica">
+  <h4>Política de privacidade 
+    &nbsp &nbsp 
+    Todos os direitos reservados.
+    &nbsp &nbsp 
+    &#174 Marca Registrada
+  </h4> 
+</div>
 
+ <!-- Importação da bibliotecas de ícones IONICONS -->
 
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 </body>
-
 </html>

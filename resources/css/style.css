@@ -4,11 +4,17 @@ roxa : #472387
 */
 /* <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 200 to 700 */
-
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 body {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-
   font-style: normal;
 }
 
@@ -34,13 +40,22 @@ img {
 }
 
 .sobrenos h3 {
-  color: aliceblue;
+  color: rgb(168, 154, 154);
+}
+
+.sobrenos h2 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .card {
   text-align: center;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  gap: 20px;
 }
 
 .card h1 {
@@ -56,23 +71,14 @@ img {
   padding: 30px 100px;
   border-radius: 8px;
 }
-
+.card h2 {
+  color: #000;
+}
 .card-midia {
   border: 2px solid;
   border-radius: 15px;
 }
 
-.sobrenos h3 {
-  color: rgb(168, 154, 154);
-  text-align: center;
-}
-
-.sobrenos h2 {
-  color: whitesmoke;
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-}
 .card > div > img {
   max-width: 250px;
   max-height: 180px;
@@ -108,6 +114,9 @@ a:hover {
   opacity: 0.7;
 }
 
+/* FIM Seção quem somos e sobre nós */
+
+/* Seção "vitrine" -- galeria / loja virtual */
 .vitrine h1 {
   text-align: center;
   font-weight: lighter;
@@ -115,28 +124,51 @@ a:hover {
   font-size: 50px;
   color: rgb(78, 78, 151);
 }
+/* Área PROMO */
+.promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #346635;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 4px 3px 4px rgb(40, 118, 182);
+}
+.promo h2 {
+  text-align: center;
+  border: 5px solid #472387;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 20px 90px;
+  box-shadow: 5px 5px 20px rgb(40, 118, 182);
+}
+/* FIM Área PROMO */
 .galeria {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.galeria div {
-  padding-bottom: 20px;
-  padding-top: 80px;
-}
 .galeria img {
-  width: 100%;
+  width: 30%;
+}
+
+.galeria > div {
 }
 
 .galeria > div > h3 {
-  color: #3d79b1;
+  color: #0d7ee9;
   font-weight: bold;
+  font-size: 28px;
+}
+.galeria > div > p {
+  font-size: 22px;
 }
 
 .galeria button {
-  background-color: #471f61;
-
+  background-color: #346635;
   border-radius: 15px;
   border: none;
   width: 200px;
@@ -147,9 +179,346 @@ a:hover {
 .galeria div {
   width: 33%;
   text-align: center;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 2px 2px 3px #aaaaaa;
+  margin-bottom: 4px;
+
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .galeria a {
   color: #ffffff;
 }
+
+/* FIM Seção "vitrine" -- galeria / loja virtual */
+
+/* seção artigo / blog - link para outra página */
+
+.orcamento {
+  background-color: #471f61;
+  padding: 60px;
+  text-align: center;
+}
+.orcamento h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.orcamento button {
+  background-color: #346635;
+  border-radius: 15px;
+  border: none;
+  width: 400px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.orcamento a {
+  color: bisque;
+}
+/* FIM seção artigo / blog - link para outra página */
+
+/* Container CONTATOS em display GRID*/
+
+.nossos-contatos {
+  background-color: #346635;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.contatos-header {
+  text-align: center;
+  background-color: #346635;
+  color: #ddcece;
+  padding: 20px 0;
+  position: relative;
+}
+
+.contatos {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.contatos > div {
+  background-color: #0e59a0;
+  color: bisque;
+  text-align: center;
+  border: 3px solid rgb(214, 200, 200);
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #471f61;
+  transition: 0.5s;
+  position: relative;
+  align-content: center;
+}
+.contatos > div > h3 {
+  color: #000;
+  font-size: 28px;
+  font-weight: lighter;
+}
+.contatos > div:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.telefones::after {
+  content: " ";
+  height: 2px;
+  width: 200px;
+  background-color: #3fb845;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* FIM Container CONTATOS em display GRID*/
+
+/* seção orçamento - link para outra página */
+
+.orcamento {
+  background-color: #471f61;
+  padding: 60px;
+  text-align: center;
+}
+.orcamento h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.orcamento button {
+  background-color: #346635;
+  border-radius: 15px;
+  border: none;
+  width: 400px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.orcamento a {
+  color: bisque;
+}
+
+/* FIM seção orçamento - link para outra página */
+
+/* SEÇÃO FOOTER */
+.links-footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #221414;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item {
+  padding: 20px;
+}
+.footer-item ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-item ul li a {
+  color: aliceblue;
+}
+.links-footer ul li {
+  list-style-type: none;
+}
+.footer-item h3 {
+  color: #3fb845;
+}
+.footer-item:first-child {
+  padding-top: 30px;
+}
+
+.diversos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding: 20px;
+  background-color: #221414;
+  color: white;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.diversos div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 10px;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.final {
+  background-color: #221414;
+  padding-bottom: 30px;
+}
+.final::before {
+  content: " ";
+  height: 2px;
+  width: 600px;
+  background-color: #3fb845;
+  display: block;
+  margin: 0 auto;
+}
+.final::after {
+  content: " ";
+  height: 2px;
+  width: 600px;
+  background-color: #3fb845;
+  display: block;
+  margin: 0 auto;
+}
+
+.politica {
+  padding: 30px;
+  margin: 0;
+  background-color: #01396e;
+  text-align: center;
+}
+.politica h4 {
+  color: wheat;
+}
+/* FIM SEÇÃO FOOTER */
+
+/**/
+/*Estilização ícones*/
+ion-icon {
+  font-size: 100%;
+  color: #e67e22;
+}
+
+.diversos ion-icon {
+  font-size: 200%;
+  color: #e67e22;
+}
+/**/
+/* Página FORMULÁRIO DE ORÇAMENTO */
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  background-color: #4a2b80;
+  color: #0d7ee9;
+}
+
+.formulario form {
+  width: 60%;
+}
+
+form h3 {
+  font-size: 24px;
+}
+.dados-contato {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  padding: 10px;
+  justify-content: center;
+  text-align: left;
+}
+
+.dados-contato input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 80px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.dados-contato label {
+  font-size: 28px;
+  color: #2196f3;
+}
+
+.formulario input[type="submit"] {
+  width: 100%;
+  background-color: #346635;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8d3f;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+.cotacao {
+  padding-bottom: 50px;
+}
+
+.cotacao h3 {
+  font-size: 28px;
+}
+.cotacao div {
+  font-size: 22px;
+}
+
+.pesquisa select {
+  text-align: center;
+  font-size: 24px;
+  color: #2196f3;
+}
+
+.marcas {
+  padding: 30px;
+  font-size: 24px;
+}
+
+/* Página de Artigo */
+
+.artigo {
+  background-color: #cececf;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 30%;
+}
+.artigo p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 5px;
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.artigo p a {
+  text-decoration: none;
+  color: #008cba;
+}
+
+.artigo ul {
+  line-height: 45px;
+  list-style: square;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.artigo ol {
+  line-height: 50px;
+  list-style: decimal;
+  font-size: 24px;
+  font-weight: lighter;
+  padding-bottom: 30px;
+}
+/* FIM Página de Artigo */
