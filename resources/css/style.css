@@ -120,14 +120,7 @@ a:hover {
 
 /* FIM Seção quem somos e sobre nós */
 
-/* Seção "vitrine" -- galeria / loja virtual */
-.vitrine h1 {
-  text-align: center;
-  font-weight: lighter;
-  letter-spacing: 5px;
-  font-size: 50px;
-  color: rgb(78, 78, 151);
-}
+
 /* Área PROMO */
 .promo {
   display: flex;
@@ -149,6 +142,15 @@ a:hover {
   box-shadow: 5px 5px 20px rgb(40, 118, 182);
 }
 /* FIM Área PROMO */
+
+/* Seção "vitrine" -- galeria / loja virtual */
+.vitrine h1 {
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: rgb(78, 78, 151);
+}
 .galeria {
   display: flex;
   justify-content: space-around;
@@ -158,10 +160,6 @@ a:hover {
 .galeria img {
   width: 30%;
 }
-
-.galeria > div {
-}
-
 .galeria > div > h3 {
   color: #0d7ee9;
   font-weight: bold;
@@ -195,31 +193,6 @@ a:hover {
 }
 
 /* FIM Seção "vitrine" -- galeria / loja virtual */
-
-/* seção artigo / blog - link para outra página */
-
-.orcamento {
-  background-color: #471f61;
-  padding: 60px;
-  text-align: center;
-}
-.orcamento h2 {
-  color: #ffffff;
-  text-align: center;
-}
-
-.orcamento button {
-  background-color: #346635;
-  border-radius: 15px;
-  border: none;
-  width: 400px;
-  transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.orcamento a {
-  color: bisque;
-}
-/* FIM seção artigo / blog - link para outra página */
 
 /* Container CONTATOS em display GRID*/
 
@@ -279,7 +252,7 @@ a:hover {
 
 /* FIM Container CONTATOS em display GRID*/
 
-/* seção orçamento - link para outra página */
+/* seção orçamento / artigo - link para outra página */
 
 .orcamento {
   background-color: #471f61;
@@ -317,7 +290,9 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
+.footer-item img{
+  width: 100px;
+}
 .footer-item {
   padding: 20px;
 }
@@ -390,7 +365,6 @@ a:hover {
 }
 /* FIM SEÇÃO FOOTER */
 
-/**/
 /*Estilização ícones*/
 ion-icon {
   font-size: 100%;
@@ -489,16 +463,17 @@ input[type="submit"]:hover {
   padding: 30px;
   font-size: 24px;
 }
-
+/* FIM DA PÁGINA FORMULÁRIO */
 /* Página de Artigo */
-
-.artigo {
-  background-color: #cececf;
+.artigo{
+  background-color: #ceccfc;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5%;
   padding-right: 30%;
+
 }
+
 .artigo p {
   text-indent: 50px;
   text-align: justify;
@@ -525,10 +500,23 @@ input[type="submit"]:hover {
   font-weight: lighter;
   padding-bottom: 30px;
 }
+.politica {
+  text-align: center;
+}
+.politica ul {
+  list-style: none;
+  color: blanchedalmond;
+}
+
+.politica ul li a{
+  color: blanchedalmond;
+}
+.artigo img{
+  width: 100%;
+}
 /* FIM Página de Artigo */
 
 /* CSS SAMUEL  */
-/* css antigo */
 body {
   margin: 0;
   padding: 0;
@@ -789,3 +777,379 @@ nav {
 /****  RESPONSIVIDADE *****/
 
 /**************************/
+
+
+/*** imagens ***/
+
+/* Página artigo */
+/*section class artigo img figure img*/
+
+@media (max-width: 768px) {
+
+
+
+/* Seção quem somos e sobre nós */
+
+.sobrenos h2 {
+  margin: 0px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto ;
+  
+}
+
+
+.card div {
+  box-shadow: 0 4px 8px 0 rgba(247, 245, 245, 0.8);
+  background-color: aliceblue;
+  padding: 5px 80px;
+  border-radius: 8px;
+}
+.card div h2{
+  font-size: 22px;
+}
+.card p{
+  margin: 10px;
+}
+.card > div > img {
+  max-width: 150px;
+  max-height: 100px;
+  width: 100%;
+}
+
+
+/* FIM Seção quem somos e sobre nós */
+
+/* Área PROMO */
+
+.promo h2 {
+
+  letter-spacing: 2px;
+  padding: 10px 35px;
+
+}
+/* FIM Área PROMO */
+/* Seção "vitrine" -- galeria / loja virtual */
+.galeria {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+
+.galeria div{
+  width: 240px ;
+}
+
+.galeria img {
+  max-width: 130px;
+  max-height: 130px;
+  width: 100%;
+}
+.galeria > div > h3 {
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+.galeria > div > p {
+  font-size: 16px;
+}
+
+/* Container CONTATOS em display GRID*/
+
+.contatos {
+  display: grid;
+  grid-template-columns: auto ;
+}
+
+/* FIM Container CONTATOS em display GRID*/
+
+
+
+
+/* SEÇÃO ARTIGO */
+.artigo{
+  background-color: #ceccfc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.artigo p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.artigo ol {
+ 
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.artigo ul {
+ 
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-size: 18px;
+}
+/* FIM SEÇÃO ARTIGO */
+
+/* SEÇÃO FOOTER */
+.links-footer {
+  display: grid;
+  grid-template-columns: auto auto ;
+  
+}
+.footer-item img{
+  width: 100px;
+}
+
+.footer-item {
+  padding: 20px;
+  text-align: center;
+  width: 180px;
+}
+.footer-item ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.diversos {
+  display: grid;
+  grid-template-columns: auto auto ;
+  justify-content: center;
+  
+}
+
+.final::before {
+   width: 60%;
+}
+.final::after {
+  width: 60%;
+}
+/* FIM SEÇÃO FOOTER */
+/* Página FORMULÁRIO DE ORÇAMENTO */
+.formulario {
+  padding: 0px;
+}
+
+.formulario form {
+  width: 100%;
+}
+
+.dados-contato {
+   display: grid;
+  grid-template-columns: auto ;
+ }
+
+
+
+.formulario input[type="submit"] {
+  width: 90%;
+  background-color: #346635;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+
+.cotacao {
+  padding-bottom: 10px;
+}
+
+.cotacao h3 {
+  font-size: 28px;
+  margin: 0px;
+}
+.cotacao div {
+  font-size: 22px;
+}
+
+.pesquisa select {
+  text-align: left;
+  font-size: 22px;
+  color: #2196f3;
+}
+
+.marcas {
+  padding: 30px;
+  font-size: 22px;
+}
+.pedido textarea{
+  width: 90%;
+
+
+}
+/* fim página orçamento*/
+}
+/************************/
+/* fim media query 768px*/
+/************************/
+@media (max-width: 468px) {
+
+  .sobrenos h2 {
+    margin: 0px;
+    font-size: 20px;
+  }
+  
+  .sobrenos h3 {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto ;
+  }
+    
+  .card div {
+    box-shadow: 0 4px 8px 0 rgba(247, 245, 245, 0.8);
+    background-color: aliceblue;
+    padding: 5px 40px;
+    border-radius: 8px;
+  }
+  /* FIM Seção quem somos e sobre nós */
+  /* Área PROMO */
+
+.promo h2 {
+
+ font-size: 15px;
+  padding: 10px 20px;
+
+}
+.artigo h1{
+  font-size: 20px;
+}
+
+.artigo h2{
+  font-size: 18px;
+}
+/* Seção "vitrine" -- galeria / loja virtual */
+.galeria {
+  display: grid;
+  grid-template-columns: auto ;
+}
+
+.galeria div{
+  width: 320px;
+}
+
+.nossos-contatos {
+  background-color: #346635;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.contatos-header h2 {
+  font-size: 22px;
+}
+.contatos-header h3 {
+  font-size: 18px;
+  padding: 2%;
+}
+
+
+.contatos > div {
+  background-color: #0e59a0;
+  color: bisque;
+  text-align: center;
+  border: 3px solid rgb(214, 200, 200);
+  width: 280px;
+  height: 250px;
+
+
+}
+.contatos > div > h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.contatos > div > p{
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
+
+/* FIM Container CONTATOS em display GRID*/
+
+
+/* seção orçamento / artigo - link para outra página */
+
+.orcamento {
+  padding: 40px;
+}
+.orcamento h2 {
+  font-size: 18px;
+}
+
+.orcamento button {
+  width: 200px;
+    
+}
+
+.orcamento button a{
+  font-size: 18px;
+}
+
+
+/* FIM seção orçamento - link para outra página */
+
+
+/* SEÇÃO FOOTER */
+.links-footer {
+  display: grid;
+  grid-template-columns: auto  ;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+}
+.footer-item img{
+  width: 100px;
+}
+.footer-item {
+  padding: 0px;
+  text-align: center;
+  width: 180px;
+}
+.footer-item ul {
+  
+  text-align: center;
+}
+.diversos {
+  display: grid;
+  grid-template-columns: auto  ;
+  justify-content: center;
+  padding: 5px;
+  
+}
+.diversos div{
+  padding: 0px;
+}
+.diversos div h4{
+  margin: 0px;
+  
+}
+.final::before {
+   width: 60%;
+}
+.final::after {
+  width: 60%;
+}
+
+/*página orçamento*/
+.formulario h2{
+  padding-left: 2%;
+}
+/* FIM página orçamento*/
+}

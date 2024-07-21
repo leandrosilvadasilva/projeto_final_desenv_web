@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="resources/css/style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     
     <!-- Importação do normalize css-->
+    <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/style.css">
     
     
     <link rel="shortcut icon" href="/resources/img/favicon/logosl-48.png" type="image/x-icon">
@@ -28,7 +29,7 @@
  <!-- Menu | Samuel-->
  <header>
   <nav class="logo-menu">
-    <img src="/resources/img/logosl.png"></img>
+    <img src="./resources/img/logosl.png"></img>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">
       <i class="fas fa-bars"></i>
@@ -172,10 +173,10 @@
             </fieldset>
             
             <h2> Deixe seu comentário, pedido ou dúvida:</h2>
-            
+            <div class="pedido">
                 <textarea name="" id="" cols="60" rows="10"></textarea>
-                <input type="submit" name="botao" id="botao" required value="Enviar">
-                
+            </div>
+              <input type="submit" name="botao" id="botao" required value="Enviar">
             
         </form>
 
@@ -190,7 +191,7 @@
     <div class="links-footer">
 
       <div class="footer-item">
-        <img src="resources/img/favicon/logosl-48.png">
+        <img src="resources/img/logosl.png">
       </div>
       <div class="footer-item">
         <h3>Home</h3>
@@ -244,12 +245,13 @@
   </div>
 </section>
 <div class="politica">
-  <h4>Política de privacidade 
-    &nbsp &nbsp 
-    Todos os direitos reservados.
-    &nbsp &nbsp 
-    &#174 Marca Registrada
-  </h4> 
+  
+  <ul>
+    <li><a href=""> Política de privacidade</a> </li>
+    <li>Todos os direitos reservados</li>
+    <li>&#174 Marca Registrada</li>
+  </ul>
+ 
 </div>
 
  <!-- Importação da bibliotecas de ícones IONICONS -->
