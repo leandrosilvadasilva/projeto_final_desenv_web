@@ -60,6 +60,7 @@ img {
   justify-content: center;
   grid-template-columns: auto auto;
   gap: 20px;
+  padding-bottom: 10px;
 }
 
 .card h1 {
@@ -131,6 +132,7 @@ a:hover {
   font-weight: bold;
   font-size: 22px;
   text-shadow: 4px 3px 4px rgb(40, 118, 182);
+  padding-top: 10px;
 }
 .promo h2 {
   text-align: center;
