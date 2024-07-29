@@ -66,6 +66,7 @@ header .logo-menu nav img {
   justify-content: center;
   grid-template-columns: auto auto;
   gap: 20px;
+  padding-bottom: 10px;
 }
 
 .card h1 {
