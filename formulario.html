@@ -18,7 +18,7 @@
     
     <link rel="shortcut icon" href="/resources/img/favicon/logosl-48.png" type="image/x-icon">
     <!--Uso font-awesome -->
-<!--Uso font-awesome -->
+<!--Uso font-awesome☺ -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -66,7 +66,7 @@
                     <input type="text" name="nome" class="inputUser" id="nome" required placeholder="Digite seu nome">
                 </div>
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">Sobrenome</label>
+                    <label for="sobrenome" class="labelInput">Sobrenome</label>
                     <input type="text" name="sobrenome" class="inputUser" id="sobrenome" required placeholder="Digite seu sobrenome">
                 </div>
                 <div class="inputBox">
@@ -84,28 +84,28 @@
         <fieldset>
             <div class="dados-contato">
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">Nome Empresa</label>
-                    <input type="text" name="nome" class="inputUser" id="nome" placeholder="Empresa | Clínica | Hospital" required>
+                    <label for="nomeempresa" class="labelInput">Nome Empresa</label>
+                    <input type="text" name="nomeempresa" class="inputUser" id="nomeempresa" placeholder="Empresa | Clínica | Hospital" required>
                 </div>
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">Razão Social</label>
-                    <input type="text" name="nome" class="inputUser" id="nome" required placeholder="Digite razão social">
+                    <label for="razaosocial" class="labelInput">Razão Social</label>
+                    <input type="text" name="razaosocial" class="inputUser" id="razaosocial" required placeholder="Digite razão social">
                 </div>
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">CNPJ</label>
-                    <input type="text" name="sobrenome" class="inputUser" id="sobrenome" required placeholder="Digite CNPJ">
+                    <label for="cnpj" class="labelInput">CNPJ</label>
+                    <input type="text" name="cnpj" class="inputUser" id="cnpj" required placeholder="Digite CNPJ">
                 </div>
                 <div class="inputBox">
-                    <label for="email" class="labelInput">Email</label>
-                    <input type="text" name="email" class="inputUser" id="email" required placeholder="Digite email da sua empresa">
+                    <label for="emailempresa" class="labelInput">Email</label>
+                    <input type="text" name="emailempresa" class="inputUser" id="emailempresa" required placeholder="Digite email da sua empresa">
                 </div>
                 <div class="inputBox">
-                    <label for="Telefone" class="labelInput">Telefone</label>
-                    <input type="text" name="telefone" class="inputUser" id="Telefone" required placeholder="Digite telefone">
+                    <label for="telefoneempresa" class="labelInput">Telefone</label>
+                    <input type="text" name="telefoneempresa" class="inputUser" id="telefoneempresa" required placeholder="Digite telefone">
                 </div>
                 <div class="inputBox">
-                  <label for="Telefone" class="labelInput">Cidade</label>
-                  <input type="text" name="telefone" class="inputUser" id="Telefone" required placeholder="Digite cidade">
+                  <label for="cidade" class="labelInput">Cidade</label>
+                  <input type="text" name="cidade" class="inputUser" id="cidade" required placeholder="Digite cidade">
               </div>
             </div>
         </fieldset>
@@ -115,8 +115,8 @@
             <fieldset class="cotacao">
                 <h3>Escolha:</h3>
                 <div>
-                    <input type="radio" name="aplicacao" id="frontend" required> Equipamentos
-                    <label for="frontend"></label>
+                    <input type="radio" name="equipamentos" id="equipamentos" required> Equipamentos
+                    <label for="equipamentos"></label>
                 </div>
 
                 <div>
@@ -135,7 +135,7 @@
             <h2>Como conheceu nossa empresa:</h2>
             
             <fieldset class="pesquisa">
-                <select id="experiencia" name="experiencia">
+                <select id="pesquisa" name="pesquisa">
                     <option value="">Selecione</option>
                     <option value="google">Google</option>
                     <option value="instagram">Instagram</option>
@@ -183,77 +183,74 @@
     </div>
 
 
+  <!--Seção footer -->    
+  <footer>
+    <section>
+        <!-- FAZER LISTA NÃO ORDENADA -->
+        <div class="links-footer">
 
-
- <!-- FOOTER  -->
- <footer>
-    
-    <div class="links-footer">
-
-      <div class="footer-item">
-        <img src="resources/img/logosl.png">
+          <div class="footer-item">
+            <img src="resources/img/logosl.png">
+          </div>
+          <div class="footer-item">
+            <h3>Home</h3>
+            <ul>
+              <li><a href="">Quem somos</a></li>
+              <li><a href="">Empresa</a></li>
+              <li><a href="">Contatos</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h3>Empresa</h3>
+            <ul>
+              <li><a href="">Soluções</a></li>
+              <li><a href="">Suporte</a></li>
+              <li><a href="">Trabalhe Conosco</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h3>Mídias sociais</h3>
+            <ul>
+              <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+          </div>
+          
+        </div>
+          
+      <div class="final">
+        <div class="diversos">
+          <div>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <h4>9999-9999</h4> 
+          </div>
+          <div> 
+            <ion-icon name="mail-outline"></ion-icon>
+            <h4>sl@sl.com.br</h4>
+          </div>
+          <div> 
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+            <h4>DPO </h4>
+          </div>
+          <div>
+            <ion-icon name="home-outline"></ion-icon> 
+            <h4>Endereços </h4>
+          </div>
+        </div>
       </div>
-      <div class="footer-item">
-        <h3>Home</h3>
+      <div class="politica">
         <ul>
-          <li><a href="">Quem somos</a></li>
-          <li><a href="">Empresa</a></li>
-          <li><a href="">Contatos</a></li>
+          <li><a href=""> Política de privacidade</a> </li>
+          <li>Todos os direitos reservados</li>
+          <li>&#174 Marca Registrada</li>
         </ul>
       </div>
-      <div class="footer-item">
-        <h3>Empresa</h3>
-        <ul>
-          <li><a href="">Soluções</a></li>
-          <li><a href="">Suporte</a></li>
-          <li><a href="">Trabalhe Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer-item">
-        <h3>Mídias sociais</h3>
-        <ul>
-          <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        </ul>
-      </div>
-      
-    </div>
-           
+    </section>
   </footer>
-</section>
-<section>
-  <div class="final">
-    <div class="diversos">
-      <div>
-        <ion-icon name="logo-whatsapp"></ion-icon>
-        <h4>9999-9999</h4> 
-      </div>
-      <div> 
-        <ion-icon name="mail-outline"></ion-icon>
-        <h4>sl@sl.com.br</h4>
-      </div>
-      <div> 
-        <ion-icon name="shield-checkmark-outline"></ion-icon>
-        <h4>DPO </h4>
-      </div>
-      <div>
-        <ion-icon name="home-outline"></ion-icon> 
-        <h4>Endereços </h4>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="politica">
-  
-  <ul>
-    <li><a href=""> Política de privacidade</a> </li>
-    <li>Todos os direitos reservados</li>
-    <li>&#174 Marca Registrada</li>
-  </ul>
- 
-</div>
 
+<!--FIM Seção footer -->
+    
  <!-- Importação da bibliotecas de ícones IONICONS -->
 
  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
