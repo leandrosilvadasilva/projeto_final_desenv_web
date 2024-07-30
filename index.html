@@ -2,41 +2,43 @@
 <html lang="pt-br">
 
 <head>
-  <script type="text/javascript" src="bootstrap/js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery-3.7.1.js"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     
     <!-- Importação do normalize css-->
-    
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
-    
-    
+        
     <link rel="shortcut icon" href="/resources/img/favicon/logosl-48.png" type="image/x-icon">
-   <!--Uso font-awesome -->
- 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Uso font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>SL Produtos Hospitalares</title>
 </head>
 
 <body>
   <!-- Menu | Samuel-->
   <header>
     <nav class="logo-menu">
-      <img src="./resources/img/logosl.png"></img>
+      <img src="./resources/img/logosl.png" alt="logo empresa SL"></img>
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">
         <i class="fas fa-bars"></i>
       </label>
 
       <ul class="menu">
-        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
         <li class="dropdown">
           <a href="#galeria-link"><i class="fas fa-box"></i> Produtos</a>
           <ul class="submenu">
@@ -60,13 +62,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="imagens/1.jpg" alt="Primeiro Slide">
+      <img class="d-block w-100" src="resources/img/1.jpg" alt="Primeiro Slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="imagens/2.jpg" alt="Segundo Slide">
+      <img class="d-block w-100" src="resources/img/2.jpg" alt="Segundo Slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="imagens/3.jpg" alt="Terceiro Slide">
+      <img class="d-block w-100" src="resources/img/3.jpg" alt="Terceiro Slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -94,7 +96,7 @@
 <!--<img src="resources/img/logosl.png">-->
     <!-- Sobre nós e/ou Quem Somos -->
      <!-- Ideia de 2 Cards com Informações -->
-     <section class="sobrenos">
+     <section class="sobrenos" id="sobre-nos">
         <h2>Quem somos</h2>
         <h3>"A melhor empresa de produtos hospitalares do Brasil"</h3>
         <!-- Pseudo Elemento para separar -->
@@ -181,7 +183,7 @@
      
   
   
-  <section class="">
+  <section id="galeria-link">
     
     <!-- Vitrine de venda de produtos -->
      <!-- Galeria com 10 produtos mais vendidos -->
@@ -195,7 +197,7 @@
     <ul class="photo-list">
       <li>
         <figure>
-          <img src="resources/img/oximetro.jpg" alt="">
+          <img src="resources/img/oximetro.jpg" alt="oximetro portatil">
           <h3>Oximetro de dedo portátil</h3>
           <p>Marca: G-Tech</p>
           <p>R$ <strong class="negrito"> 141,99</strong></p>
@@ -204,7 +206,7 @@
       </li>
       <li>
         <figure>
-          <img src="resources/img/oximetro-2.png" alt="">
+          <img src="resources/img/oximetro-2.png" alt="oximetro">
             <h3>Oximetro</h3>
             <p>Marca: G-Tech</p>
             <p>R$ <strong class="negrito"> 148,99</strong></p>
@@ -213,7 +215,7 @@
       </li>
       <li>
         <figure>
-          <img src="resources/img/curativo.jpg" alt="">
+          <img src="resources/img/curativo.jpg" alt="curativo silicone">
           <h3>Curativo Ag Silicone</h3>
           <p>Marca: Biatain</p>
             <p>R$ <strong class="negrito"> 57,99</strong></p>
@@ -222,7 +224,7 @@
       </li>
       <li>
         <figure>
-          <img src="resources/img/desfribilador.jpg" alt="">
+          <img src="resources/img/desfribilador.jpg" alt="desfribilador externo">
           <h3>Desfribilador Externo</h3>
           <p>Marca: DEA</p>
             <p>R$ <strong class="negrito"> 6.999,99</strong></p>
@@ -231,7 +233,7 @@
       </li>
       <li>
         <figure>
-          <img src="resources/img/cama.jpg" alt="">
+          <img src="resources/img/cama.jpg" alt="cama hospitalar eletrica">
             <h3>Cama Hospitalar Elétrica</h3>
             <p>Marca: G-Tech</p>
             <p>R$ <strong class="negrito"> 17.999,99</strong></p>
@@ -240,7 +242,7 @@
       </li>
       <li>
         <figure> 
-            <img src="resources/img/creme.jpg" alt="">
+            <img src="resources/img/creme.jpg" alt="creme antirressecamento">
             <h3>Creme Antirressecamento</h3>
             <p>Marca: Coloplast</p>
             <p>R$ <strong class="negrito"> 87,99</strong></p>
@@ -250,51 +252,7 @@
       
     </ul>
 
-      <!--
-         <div>
-            <img src="resources/img/oximetro.jpg" alt="">
-            <h3>Oximetro de dedo portátil</h3>
-            <p>Marca: G-Tech</p>
-            <p>R$ <strong class="negrito"> 141,99</strong></p>
-            <button><a href="#"> Comprar</a></button>
-        </div>
-        <div>
-          <img src="resources/img/oximetro-2.png" alt="">
-            <h3>Oximetro</h3>
-            <p>Marca: G-Tech</p>
-            <p>R$ <strong class="negrito"> 148,99</strong></p>
-            <button><a href="#"> Comprar</a></button>
-        </div>
-        <div>
-          <img src="resources/img/curativo.jpg" alt="">
-          <h3>Curativo Ag Silicone</h3>
-          <p>Marca: Biatain</p>
-            <p>R$ <strong class="negrito"> 57,99</strong></p>
-            <button><a href="#"> Comprar</a></button>
-        </div>
-        <div>
-          <img src="resources/img/cama.jpg" alt="">
-          <h3>Cama Hospitalar Elétrica</h3>
-          <p>Marca: G-Tech</p>
-            <p>R$ <strong class="negrito"> 17.999,99</strong></p>
-            <button><a href="#"> Comprar</a></button>
-        </div>
-        <div>
-          <img src="resources/img/creme.jpg" alt="">
-          <h3>Creme Antirressecamento</h3>
-          <p>Marca: Coloplast</p>
-            <p>R$ <strong class="negrito"> 87,99</strong></p>
-            <button><a href="#"> Comprar</a></button>
-        </div>
-        <div>
-          <img src="resources/img/desfribilador.jpg" alt="">
-          <h3>Desfribilador Externo</h3>
-          <p>Marca: DEA</p>
-            <p>R$ <strong class="negrito"> 6.999,99</strong></p>
-            <button><a href="#"> Comprar</a></button>
-        </div>
-      -->
-
+     
     </section>
 
    
@@ -327,7 +285,7 @@
 
           </div>
       </div>
-        <div class="contatos">
+        <div class="contatos" id="contato">
           <div class="">
             <h3>Time comercial</h3>
             <p>Para ﬁnanceiro, boletos, NFs, previsão de entregas de pedidos, reclamações e sugestões de melhorias</p>
@@ -373,10 +331,10 @@
         <!-- FAZER LISTA NÃO ORDENADA -->
         <div class="links-footer">
 
-          <div class="footer-item">
+          <div class="nav-footer">
             <img src="resources/img/logosl.png">
           </div>
-          <div class="footer-item">
+          <div class="nav-footer">
             <h3>Home</h3>
             <ul>
               <li><a href="">Quem somos</a></li>
@@ -384,7 +342,7 @@
               <li><a href="">Contatos</a></li>
             </ul>
           </div>
-          <div class="footer-item">
+          <div class="nav-footer">
             <h3>Empresa</h3>
             <ul>
               <li><a href="">Soluções</a></li>
@@ -392,7 +350,7 @@
               <li><a href="">Trabalhe Conosco</a></li>
             </ul>
           </div>
-          <div class="footer-item">
+          <div class="nav-footer">
             <h3>Mídias sociais</h3>
             <ul>
               <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
@@ -423,17 +381,19 @@
           </div>
         </div>
       </div>
-    </section>
-    <div class="politica">
-  
-      <ul>
-        <li><a href=""> Política de privacidade</a> </li>
-        <li>Todos os direitos reservados</li>
-        <li>&#174 Marca Registrada</li>
-      </ul>
-     
-  </div>
 
+      <div class="politica">
+  
+        <ul>
+          <li><a href=""> Política de privacidade</a> </li>
+          <li>Todos os direitos reservados</li>
+          <li>&#174 Marca Registrada</li>
+        </ul>
+       
+    </div>
+  
+    </section>
+  
      <!-- Importação da bibliotecas de ícones IONICONS -->
 
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
